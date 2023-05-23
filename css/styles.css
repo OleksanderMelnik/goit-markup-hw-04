@@ -1,0 +1,372 @@
+/**----------COLORS-------------------*/
+
+:root {
+    --main-color: #2E2F42;
+    --second-background-color: #F4F4FD;
+    --text-color:#434455;
+    --background-hover-color: #404BBF;
+    --hero-hover-color: #FFFFFF;
+    --iris-color: #4D5AE5;
+    --border-btn: #e7e9fc;
+    
+}
+
+/**----------GENERAL REQUIREMENTS------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: var(--hero-hover-color);
+}
+
+/**------------RESET STYLES------------------*/
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.vebstudio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}
+
+/**----------TOP LOGO-------------------*/
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.displayflax {
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris-color);
+    display: flex;
+    align-items: center;
+    margin-right: 76px;
+}
+
+.logo-span-top {
+   color: #2E2F42;
+}
+
+/**----------NAVIGATION-------------------*/
+
+.top-list {
+    display: flex;
+    gap: 40px;
+    width: 261px;
+    margin-right: 332px;
+}
+
+.top-link {
+    padding: 24px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.top-item {
+    padding: 24px 0;
+}
+
+.top-link:hover,
+.top-link:focus {
+color: var(--background-hover-color);
+}
+
+.address-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--background-hover-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-list {
+    display: flex;
+    width: 344px;
+    gap: 40px;
+}
+
+/**----------HERO WEBSTUDIO-------------------*/
+
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-color: var(--main-color);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--hero-hover-color);
+    max-width: 496px;
+    margin: auto;
+    margin-bottom: 48px;
+}
+
+/**----------HERO BUTTON-------------------*/
+
+.hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    letter-spacing: 0.04em;
+    color: var(--hero-hover-color);
+    background-color: var(--iris-color);
+    padding: 16px 32px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--background-hover-color);
+}
+
+/**----------FEATURES-------------------*/
+
+.specifics {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/**.specifics-title {
+    margin-bottom: 8px;
+    color: var(--main-color);
+}*/
+.specifics-list {
+    display: flex;
+    gap: 24px;
+}
+
+.specifics-item {
+    width: calc((100% - 72px) / 4);
+}
+
+/**----------WHAT ARE WE GOING-------------------*/
+
+.our-works {
+    padding-bottom: 120px;
+}
+
+.our-works-list {
+    display: flex;
+    gap: 24px;
+}
+
+/**----------OUR TEAM-------------------*/
+
+.team {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    background-color: var(--second-background-color);
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.team-name-position {
+    padding: 32px 16px;
+}
+
+.team-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-text {
+    margin-top: 8px;
+}
+
+
+/**----------FUTER-------------------*/
+
+.footer {
+    padding: 100px 0;
+    background-color: var(--main-color);
+}
+
+.logo-footer {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.text-footer {
+    color: var(--second-background-color);
+    width: 264px;
+    line-height: 1.5;
+}
+
+.logo-span {
+    color: var(--second-background-color);
+}
+
+/**----------PORTFOLIO-------------------*/
+
+.section-portfolio {
+    padding: 96px 0 120px;
+}
+
+.hero-portfolio {
+    color: var(--text-color);
+} 
+
+.btn-list {
+    margin-bottom: 72px;
+    justify-content: center;
+    gap: 24px;
+}
+
+.filter-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    min-width: 69px;
+    height: 48px;
+    padding: 12px 24px;
+    border: 1px solid var(--border-btn);
+    background-color: var(--second-background-color);
+    color: var(--iris-color);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    border: 1px solid transparent;
+    background-color: var(--background-hover-color);
+    color: var(--hero-hover-color);
+}
+
+.pictures-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+.container-img {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.img-title {
+    margin-bottom: 8px;
+}
+
+/**----------PECULIARITES------------------*/
+
