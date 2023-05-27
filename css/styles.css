@@ -379,7 +379,16 @@ color: var(--background-hover-color);
     border-color: #404BBF;
 }
 
+.customers-icon:focus {
+    border-color: #404BBF;
+}
+
 .customers-icon:hover .customers-img-icon,
+.customers-icon:focus .customers-img-icon {
+    fill: #404BBF;
+    color: #404bbf;
+}
+
 .customers-icon:focus .customers-img-icon {
     fill: #404BBF;
     color: #404bbf;
