@@ -241,12 +241,6 @@ color: var(--background-hover-color);
     padding-bottom: 120px;
 }
 
-.specifics-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .specifics-list {
     display: flex;
     gap: 24px;
@@ -257,7 +251,10 @@ color: var(--background-hover-color);
 }
 
 .specifics-icon {
-    width: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 264px;
     height: 112px;
     background-color: #F4F4FD;
     border-radius: 4px;
